@@ -38,6 +38,7 @@ public class Reader implements Runnable {
             // read messages from socket
             try {
                 String s = conn.from.readLine();
+                // update a TextView or ScrollView
                 Log.i(LOG_TAG, s);
             } catch (IOException e) {
                 Log.e(LOG_TAG, e.toString());
