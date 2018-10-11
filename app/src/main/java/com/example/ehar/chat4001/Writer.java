@@ -8,6 +8,9 @@ import java.io.IOException;
  * Created by ehar on 10/27/2016.
  */
 
+// This does not need to be a thread. Just get the text from the text view and send it along on the socket. Cant do that 
+// on the UI thread but it doesn need to be a thread that just stays alove forever.
+
 public class Writer implements Runnable {
 
     private String LOG_TAG = Writer.class.getName();
